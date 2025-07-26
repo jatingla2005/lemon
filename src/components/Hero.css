@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+.hero-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 4rem;
+  background-color: #495e57;
+  position: relative; /* allows the polaroid to overlap */
+  overflow: visible;  /* ensures polaroid is visible outside container */
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 2rem;
+  font-family: 'Markazi Text', serif;
+  text-align: left;
+}
+
+
+.hero-text h1 {
+  font-size: 4rem;
+  margin: 0;           /* Remove all margin between h1s */
+  line-height: 1.1;    /* Slightly tighter line spacing */
+  color:#face14;
+}
+
+
+.hero-text p {
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+  color: white;
+  
+}
+
+.reserve-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #face14; /* bright yellow */
+  color: #333; /* dark text for contrast */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: 'Karla', sans-serif;
+}
+
+.polaroid-frame-wrapper {
+  width: 380px; /* bigger polaroid */
+  position: absolute;
+  bottom: -30px; /* extends beyond hero section */
+  right: 4rem; /* adjust as needed */
+  transform: rotate(-3deg) translateX(-20px);
+  z-index: 2;
+}
+
+.polaroid-frame {
+  background: whitesmoke;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px 10px 30px 10px; /* extra bottom padding for caption */
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-family: 'Markazi Text', serif;
+}
+
+.polaroid-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.polaroid-caption {
+  margin-top: 12px;
+  font-size: 1.5rem;
+  color: #444;
+  
+  font-family: 'Satisfy', cursive;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero-text {
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  .reserve-button {
+    font-size: 0.95rem;
+  }
+
+  .polaroid-frame-wrapper {
+    position: static;
+    width: 90vw;
+    transform: none;
+    margin-top: 1rem;
+  }
+}

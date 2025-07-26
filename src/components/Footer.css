@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+.footer {
+  background-color: #3e5750;
+  color: white;
+  font-family: 'Karla', sans-serif;
+  padding: 1rem 1rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+  
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+}
+#footer-section{
+    font-family: 'Markazi Text', serif;
+}
+.footer-logo {
+  width: 130px;
+  margin-bottom: 1rem;
+}
+
+/* Yellow headings */
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #f4ce14;
+  font-family: 'Markazi Text', serif;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-nav li a:hover {
+  color: #f4ce14; /* or any highlight color you prefer */
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 5rem;
+  justify-content: center;
+}
+
+.social-icons a {
+  font-size: 2rem;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #f4ce14;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    margin-bottom: 2rem;
+  }
+}

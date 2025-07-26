@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px; /* Enough space for 150px logo */
+  background-color: #edefee;
+  border-bottom: 1px solid #ccc;
+  font-family: 'Markazi Text', serif;
+  box-sizing: border-box;
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 180px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+.nav-right {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-right li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 25px;
+  transition: color 0.2s ease-in-out;
+  font-family: 'Markazi Text', serif;
+}
+
+.nav-right li a:hover {
+  color: #face14;
+}
+
+/* Hamburger styles (optional for mobile) */
+.hamburger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    position: static;
+    margin-bottom: 10px;
+  }
+
+  .nav-right {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    padding: 10px 0;
+  }
+
+  .nav-right.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+}

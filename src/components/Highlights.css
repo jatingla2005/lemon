@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+.highlights {
+  padding: 2rem;
+  background-color: #edefee;
+  font-family: 'Karla', sans-serif;
+}
+
+.highlights-header {
+  display: flex;
+  justify-content:space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-family: 'Markazi Text', serif;
+}
+
+.highlights-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.menu-button {
+  background-color: #333;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Karla', sans-serif;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.card {
+  width: 300px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.price {
+  color: #d62828;
+  font-weight: bold;
+}
+
+.description {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.delivery {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.delivery:hover {
+  color: #d62828;
+  cursor: pointer;
+}

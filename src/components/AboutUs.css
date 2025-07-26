@@ -1,0 +1,104 @@
+.about-section {
+  padding: 0.5rem 2rem;
+  background-color: #edefee;
+  font-family: 'Karla', sans-serif;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 2rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-family: 'Markazi Text', serif;
+  color: #2e3c36;
+  margin-bottom: 0.5rem;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  color: #2e3c36;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: 'Markazi Text', serif;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.about-images {
+  position: relative;
+  flex: 1;
+  min-width: 300px;
+  justify-self: center;
+  align-items: center;
+}
+.image-wrapper {
+  position: relative;
+  width: 270px; /* slightly more than image width */
+  height: 270px;
+}
+
+/* Shared image style */
+.about-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Top image position */
+.top-image {
+  position: relative;
+  z-index: 2;
+  left: 300px;
+}
+
+/* Bottom image with crop effect but same size */
+.bottom-image {
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  z-index: 1;
+  object-position: top center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-text {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .about-images {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .bottom-image {
+    top: 50px;
+    left: 50px;
+  }
+}
